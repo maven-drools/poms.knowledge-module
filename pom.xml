@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.lightful.poms</groupId>
+    <artifactId>standard-plugins</artifactId>
+    <version>1</version>
+  </parent>
+
+  <groupId>de.lightful.maven.drools.poms</groupId>
+  <artifactId>knowledge-module</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Maven Drools Support :: Parent POMs :: Knowledge Module</name>
+  <description>Parent POM for Maven modules of type 'Drools Knowledge Module'.</description>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+
+        <plugin>
+          <groupId>de.lightful.maven.plugins</groupId>
+          <artifactId>maven-drools-plugin</artifactId>
+          <version>0.0.15</version>
+          <extensions>true</extensions>
+          <dependencies>
+            <!-- by default, we compile *.drl files using Drools 5.1.1 -->
+            <dependency>
+              <groupId>org.drools</groupId>
+              <artifactId>drools-compiler</artifactId>
+              <version>[5.1.1]</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>
