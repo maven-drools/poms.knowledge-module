@@ -27,7 +27,7 @@
 
   <groupId>de.lightful.maven.drools.poms</groupId>
   <artifactId>knowledge-module</artifactId>
-  <version>6</version>
+  <version>7-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Maven Drools Support :: Parent POMs :: Knowledge Module</name>
