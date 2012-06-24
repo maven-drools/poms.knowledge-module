@@ -35,7 +35,7 @@
   <description>Parent POM for Maven modules of type 'Drools Knowledge Module'.</description>
 
   <properties>
-    <version.maven-drools-plugin>0.3.1</version.maven-drools-plugin>
+    <drools.plugin.version>0.3.1</drools.plugin.version>
   </properties>
 
   <licenses>
@@ -52,7 +52,7 @@
         <plugin>
           <groupId>de.lightful.maven.plugins</groupId>
           <artifactId>maven-drools-plugin</artifactId>
-          <version>[${version.maven-drools-plugin}]</version>
+          <version>${drools.plugin.version}</version>
           <extensions>true</extensions>
         </plugin>
       </plugins>
